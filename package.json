@@ -1,0 +1,25 @@
+{
+  "name": "logbook-xmpp",
+  "version": "0.1.0",
+  "description": "Log to XMPP with Logbook",
+  "main": "xmpp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpillora/node-logbook-xmpp"
+  },
+  "keywords": [
+    "logbookplugin",
+    "log",
+    "xmpp",
+    "jabber",
+    "gtalk",
+    "google",
+    "talk"
+  ],
+  "author": "Jaime Pillora <dev@jpillora.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "simple-xmpp": "0.1.12"
+  }
+}
