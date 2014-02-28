@@ -12,10 +12,12 @@ Disable console and send `stderr` to everyone in your contact list:
 ``` javascript
 require('logbook').configure({
   console: {
-    enabled: false
+    log: false,
+    err: false
   },
   xmpp: {
-    enabled: true,
+    log: true,
+    err: true,
     jid: '...@gmail.com',
     password: '...',
   }
@@ -48,9 +50,8 @@ This string will be prefixed to every message
 The machines name (`hostname` on Unix) will be prefixed to every message
 
 ### Defaults
-
+```
   "xmpp": {
-    "enabled": false,
     "jid": null,
     "password": null,
     "host": "talk.google.com",
@@ -60,5 +61,6 @@ The machines name (`hostname` on Unix) will be prefixed to every message
     "machineName": false,
     "delay": 100,
     "log": false,
-    "err": true
+    "err": false
   }
+```
